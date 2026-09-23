@@ -61,7 +61,6 @@ sgd_clf = SGDClassifier(random_state=42)
 sgd_clf.fit(X_train, y_train_5)
 print(sgd_clf.predict([some_digit]))
 
-'''
 # Performance Measures
 cross_val_score(sgd_clf, X_train, y_train_5, cv=3, scoring="accuracy")
 
@@ -111,4 +110,3 @@ save_fig("roc_curve_plot")
 plt.show()
 
 print(roc_auc_score(y_train_5, y_scores))
-'''
